@@ -11,7 +11,7 @@
 
     <servlet-mapping>
         <servlet-name>ListenerTester</servlet-name>
-        <url-pattern>ListenTest.do</url-pattern>
+        <url-pattern>/ListenTest.do</url-pattern>
     </servlet-mapping>
 
     <context-param>
@@ -20,6 +20,8 @@
     </context-param>
 
     <listener>
-        <listener-class>com.example.MyServletContextListener</listener-class>
+        <listener-class>
+            com.example.MyServletContextListener
+        </listener-class>
     </listener>
 </web-app>
